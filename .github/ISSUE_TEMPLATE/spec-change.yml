@@ -1,0 +1,26 @@
+name: Spec change
+description: Propose a change to the simplex framework spec
+title: "spec: "
+labels: ["spec"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are we solving?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What is the change? Include examples.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Backwards compatibility, affected variants, migration notes.
+    validations:
+      required: true

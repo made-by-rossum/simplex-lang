@@ -1,0 +1,28 @@
+name: Variant change
+description: Change affixes/roots/orthography for a specific variant
+title: "variant: "
+body:
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Variant
+      options:
+        - simplex-en
+        - simplex-fr
+        - simplex-es
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Change
+      description: What are we changing and why?
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Provide before/after examples.
+    validations:
+      required: true
