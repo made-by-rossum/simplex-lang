@@ -48,11 +48,19 @@ Every variant MUST implement these meanings:
 - **FUTURE** — action/state occurs in the future
 - **PRESENT** — default/unmarked
 
+Notes:
+- Tense may be implemented as affixes or auxiliary particles.
+- For `simplex-en` v0.1 we currently prefer **auxiliaries** (e.g. `did`, `will`).
+
 ### 2.3 Polarity
 - **NEGATION** — logical negation of a clause ("not")
 
 ### 2.4 Interrogative
 - **QUESTION** — marks a clause as a yes/no question
+
+Notes:
+- A variant may implement QUESTIONS as a dedicated particle (e.g. `qa`) **or** with auxiliary inversion (e.g. `do/did/will`).
+- The chosen form must be regular and deterministic within the variant.
 
 ### 2.5 Derivation (word-building)
 - **AGENT** — “person/thing that does X” (doer)
@@ -71,11 +79,11 @@ The framework does **not** mandate whether a meaning is expressed as:
 A variant is v0.1-compliant if it can express the following without exceptions:
 
 1. `I see dog.`
-2. `I saw dog.`
-3. `I will see dog.`
-4. `I do not see dog.`
-5. `Do I see dog?` (yes/no question)
-6. `I see dogs.`
+2. `I did see dog.` (PAST)
+3. `I will see dog.` (FUTURE)
+4. `I not see dog.` (NEGATION)
+5. `Do you see dog?` (QUESTION)
+6. `I see dogs.` (PLURAL)
 7. `teacher` (AGENT(teach))
 8. `unclear` (OPPOSITE(clear))
 
