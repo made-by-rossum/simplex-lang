@@ -1,0 +1,20 @@
+{
+  "name": "simplex-lang",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "fmt": "pnpm -r fmt",
+    "examples": "pnpm --filter @simplex/cli run examples"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7",
+    "tsx": "^4.19.3"
+  }
+}

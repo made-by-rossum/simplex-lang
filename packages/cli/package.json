@@ -1,0 +1,17 @@
+{
+  "name": "@simplex/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@simplex/core": "workspace:*",
+    "@simplex/variants": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "examples": "tsx src/examples.ts",
+    "test": "vitest run",
+    "lint": "echo 'no lint yet'",
+    "fmt": "echo 'no fmt yet'"
+  }
+}
